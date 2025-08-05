@@ -1,12 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=, initial-scale=1.0">
-  <title>Vionix Academy</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="src/font.css" />
+	<link rel="stylesheet" href="src/input.css" />
+	<link rel="stylesheet" href="src/output.css" />
+	<link rel="stylesheet" href="src/style.css" />
+	<title>Vionix Academy</title>
 </head>
-<body>
-  commit test
-  second commit 
+<body class="">
+	<header class="bg-main text-white relative">
+		<nav class="container  mx-auto flex justify-between items-center px-6 py-2">
+			<div class="flex gap-6">
+				<div>
+					<a href="">Logo</a>
+				</div>
+				<div class="hidden l:block">
+					<ul class="menu flex gap-4">
+						<li onclick="togglePanel(this)" class="navmenu hover:text-yellow cursor-pointer">Catalog <i class="fa-solid fa-caret-down"></i></li>
+						<div class="panel absolute left-0 top-[100%] min-w-[1024px] overflow-hidden h-0 transition-all duration-500 z-[999]">
+							<div class="flex bg-white text-black items-center ">
+								<div class="px-[24px] py-[32px] flex flex-col justify-between h-[360px] border-b ">
+									<div>
+										<p class="text-[20px] mb-2 font-medium">Popular course topics</p>
+										<p class="w-[207px] text-[14px] ">Explore free or paid courses in topics that interest you.</p>
+									</div>
+									<button class="bg-[#3a10e5] rounded-md text-white py-2 ">Explore all courses</button>
+								</div>
+								<div class="bg-[#10162f] text-white w-full border-l-0 border border-white">
+									<div class="px-[48px] py-[32px] ">
+										<ul class="columns-3">
+											<li class="py-2 hover:text-yellow">Python</li>
+											<li class="py-2 hover:text-yellow">JavaScript</li>
+											<li class="py-2 hover:text-yellow">HTML & CSS</li>
+											<li class="py-2 hover:text-yellow">SQL</li>
+											<li class="py-2 hover:text-yellow">Java</li>
+											<li class="py-2 hover:text-yellow">C++</li>
+											<li class="py-2 hover:text-yellow">C#</li>
+											<li class="py-2 hover:text-yellow">C</li>
+											<li class="py-2 hover:text-yellow">PHP</li>
+											<li class="py-2 hover:text-yellow">R</li>
+											<li class="py-2 hover:text-yellow">IT</li>
+											<li class="py-2 hover:text-yellow">Cybersecurity</li>
+											<li class="py-2 hover:text-yellow">Cloud computing</li>
+											<li class="py-2 hover:text-yellow">AI</li>
+											<li class="py-2 hover:text-yellow">Web development</li>
+											<li class="py-2 hover:text-yellow">Data science</li>
+											<li class="py-2 hover:text-yellow">Web design</li>
+											<li class="py-2 hover:text-yellow">Professional skills</li>
+										</ul>
+									</div>
+									<div class="bg-[#0b0d1c] py-[16px] px-[48px] border-l-0 border border-white">
+										<p>Want to help shape digital products? Check out the new UX Designer career path.</p>
+									</div>
+								</div>
+							</div>
+							<div class="flex bg-white text-black">
+								<div class="px-[24px] py-[32px] border-b">
+									<p class="text-[20px] mb-2 font-medium">Top career paths</p>
+									<p class="w-[207px] text-[14px] ">Choose your career. We'll teach you the skills to get job-ready.</p>
+								</div>
+								<div class="bg-[#10162f] text-white border-l-0 border-t-0 border border-white w-full">
+									<div class="px-[48px] py-[32px] ">
+										<ul class="columns-3">
+											<li class="py-2 hover:text-yellow">Full-Stack Engineer</li>
+											<li class="py-2 hover:text-yellow">Back-End Engineer</li>
+											<li class="py-2 hover:text-yellow">iOS Developer</li>
+											<li class="py-2 hover:text-yellow">Front-End Engineer</li>
+											<li class="py-2 hover:text-yellow">Computer Science</li>
+											<li class="py-2 hover:text-yellow">Data Scientist</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="flex bg-white text-black">
+								<div class="px-[24px] py-[32px] border-b">
+									<p class="text-[20px] mb-2 font-medium">Live Learning	</p>
+									<p class="w-[207px] text-[14px] ">Build skills faster through live learning with expert instructors.</p>
+								</div>
+								<div class="bg-[#10162f] text-white border-l-0 border-t-0 border border-white w-full">
+									<div class="px-[48px] py-[32px] flex items-start gap-10">
+										<div class="flex flex-col">
+											<p class="font-bold flex items-center  gap-1">Bootcamps <span class="bg-yellow text-[10px] text-black py-0.5 px-2 rounded-xl">New</span></p>
+											<p class="py-2 text-[14px] w-[150px]">Learn live from industry experts.</p>
+										</div>
+										<div class="flex flex-col">
+											<p class="font-bold flex items-center  gap-1">Codecademy x GK <span class="bg-yellow text-[10px] text-black py-0.5 px-2 rounded-xl">New</span></p>
+											<p class="py-2 text-[14px] w-[150px]">Instructor-led courses, offered via our partner organization.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="bg-[#10162f] text-white py-[16px] px-[24px] w-full flex gap-8 items-center border-r border-b border-white">
+								<p>Not sure where to begin?</p>
+								<a class="text-yellow text-[14px]">Take our quiz <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+							</div>
+						</div>
+						<li onclick="togglePanel(this)" class="navmenu hover:text-yellow cursor-pointer">Resources <i class="fa-solid fa-caret-down"></i></li>
+						<div class="panel absolute left-0 top-[100%] min-w-[1024px] overflow-y-scroll overflow-hidden h-0 transition-all duration-500 z-[999]">
+							<div class="flex bg-white text-black items-center ">
+								<div class="p-[32px] flex flex-col justify-between border-b w-[31%]">
+									<div>
+										<p class="text-[20px] mb-2 font-medium">Docs</p>
+										<p class="w-[150px] text-[14px] ">Find definitions, code syntax, and more -- or contribute your own code documentation.</p>
+									</div>
+									<div class="flex flex-col gap-2 py-4">
+										<a class="text-[#3a10e5] text-[14px]">View all docs →</a>
+										<a class="text-[#3a10e5] text-[14px]">Contribute to docs →</a>
+									</div>
+								</div>
+								<div class="bg-[#10162f] text-white size-full border-l-0 border border-white">
+									<div class="p-[55px]">
+										<ul class="columns-3">
+											<li class="py-2 hover:text-yellow">C</li>
+											<li class="py-2 hover:text-yellow">HTML</li>
+											<li class="py-2 hover:text-yellow">Python</li>
+											<li class="py-2 hover:text-yellow">C++</li>
+											<li class="py-2 hover:text-yellow">Java</li>
+											<li class="py-2 hover:text-yellow">React</li>
+											<li class="py-2 hover:text-yellow">CSS</li>
+											<li class="py-2 hover:text-yellow">JavaScript</li>
+											<li class="py-2 hover:text-yellow">SQL</li>
+											<li class="py-2 hover:text-yellow">Git</li>
+											<li class="py-2 hover:text-yellow">PHP</li>
+											<li class="py-2 hover:text-yellow">UI/UX</li>
+										</ul>
+									</div>
+									
+								</div>
+							</div>
+							<div class="flex bg-white text-black">
+								<div class="p-[32px] border-b w-[31%]">
+									<p class="text-[20px] mb-2 font-medium">Learning & practice tools</p>
+								</div>
+								<div class="bg-[#10162f] text-white border-l-0 border-t-0 border border-white w-full">
+									<div class="px-[48px] py-[32px] ">
+										<ul class="columns-3">
+											<li class="py-2 hover:text-yellow flex flex-col">
+												<p class="font-bold pb-1">Articles</p>
+												<p class="w-[180px] text-[14px]">Learn about technical concepts.</p>
+											</li>
+											<li class="py-2 hover:text-yellow flex flex-col">
+												<p class="font-bold pb-1">Cheatsheets</p>
+												<p class="w-[180px] text-[14px]">Review concepts from your courses.</p>
+											</li>
+											<li class="py-2 hover:text-yellow flex flex-col">
+												<p class="font-bold pb-1">Code challenges</p>
+												<p class="w-[180px] text-[14px]">Test your knowledge and prep for interviews.</p>
+											</li>
+											<li class="py-2 hover:text-yellow flex flex-col">
+												<p class="font-bold pb-1">Projects</p>
+												<p class="w-[180px] text-[14px]">Practice and build your portfolio.</p>
+											</li>
+											<li class="py-2 hover:text-yellow flex flex-col">
+												<p class="font-bold pb-1">Videos</p>
+												<p class="w-[180px] text-[14px]">Watch tutorials, project walkthroughs, and more.</p>
+											</li>
+											<li class="py-2 hover:text-yellow flex flex-col">
+												<p class="font-bold pb-1">Workspaces</p>
+												<p class="w-[180px] text-[14px]">Build and share projects in your browser.</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="flex bg-white text-black">
+								<div class="p-[32px] w-[31%]">
+									<p class="text-[20px] mb-2 font-medium w-[150px]">Inspiration & career</p>
+									<a class="text-[#3a10e5] text-[14px]">View all blog topics →</a>
+								</div>
+								<div class="bg-[#10162f] w-full text-white border-l-0 border-t-0 border border-white">
+									<div class="px-[48px] py-[32px] flex items-start gap-10">
+										<ul class="columns-3">
+											<li class="py-2 hover:text-yellow flex flex-col">
+												<p class="font-bold pb-1">Career advice</p>
+												<p class="w-[180px] text-[14px]">Get answers to questions about coding careers.</p>
+											</li>
+											<li class="py-2 hover:text-yellow flex flex-col">
+												<p class="font-bold pb-1">Learning tips</p>
+												<p class="w-[180px] text-[14px]">Learn where to start and how to stay motivated.</p>
+											</li>
+											<li class="py-2 hover:text-yellow flex flex-col">
+												<p class="font-bold pb-1 flex items-center gap-1">Career Center <span class="bg-yellow text-[10px] text-black py-0.5 px-2 rounded-xl">New</span></p>
+												<p class="w-[180px] text-[14px]">Get tools to reach your tech career goals. </p>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<li onclick="togglePanel(this)" class="navmenu hover:text-yellow cursor-pointer">Community <i class="fa-solid fa-caret-down"></i></li>
+						<div class="panel absolute top-[100%] left-[380px] overflow-y-scroll overflow-hidden h-0 transition-all duration-500 z-[999]">
+							<ul class="border border-white py-3 bg-[#10162f]">
+								<li class="py-2 hover:text-yellow">
+									<a class="flex items-center gap-2 py-2 px-[24px]">
+										<i class="fa-solid fa-globe text-[25px]"></i>
+										Visit Community
+									</a>
+								</li>
+								<li class="py-2 hover:text-yellow">
+									<a class="flex items-center gap-2 py-2 px-[24px]">
+										<i class="fa-solid fa-calendar-days text-[25px]"></i>
+										Events
+									</a>
+								</li>
+								<li class="py-2 hover:text-yellow">
+									<a class="flex items-center gap-2 py-2 px-[24px]">
+										<i class="fa-solid fa-bookmark text-[25px]"></i>
+										Learner Stories
+									</a>
+								</li>
+								<li class="py-2 hover:text-yellow">
+									<a class="flex items-center gap-2 py-2 px-[24px]">
+										<i class="fa-solid fa-user-pen text-[25px]"></i>
+										Code Crew
+									</a>
+								</li>
+							</ul>
+						</div>
+						<li onclick="togglePanel(this)" class="navmenu hover:text-yellow cursor-pointer">Pricing <i class="fa-solid fa-caret-down"></i></li>
+						<div class="panel absolute top-[100%] left-[510px] overflow-y-scroll overflow-hidden h-0 transition-all duration-500 z-[999]">
+							<ul class="border border-white py-3 bg-[#10162f]">
+								<li class="py-2 px-[24px] hover:text-yellow">
+									<a>For Individuals</a>
+								</li>
+								<li class="py-2 px-[24px] hover:text-yellow">
+									<a>For Students</a>
+								</li>
+								<li class="py-2 px-[24px] hover:text-yellow">
+									<a>For Business</a>
+								</li>
+							</ul>
+						</div>
+						<li class="hover:text-yellow cursor-pointer flex items-center gap-1">Live Learning <span class="bg-yellow text-[10px] text-black py-0.5 px-2 rounded-xl">New</span></li>
+						<li class="hover:text-yellow cursor-pointer">New</li>
+						<li class="hover:text-yellow cursor-pointer">For Business</li>
+					</ul>
+				</div>
+			</div>
+			<div class="flex gap-4 l:gap-8 items-center ">
+				<div class="cursor-pointer">
+					<i class="fa-solid fa-magnifying-glass text-[25px] hover:text-yellow"></i>
+				</div>
+				<div>
+					<button class="bg-yellow px-4 py-2 text-black rounded-xl cursor-pointer hover:bg-[#cca902]">Müraciət et</button>
+				</div>
+				<div class="l:hidden">
+					<i class="fa-solid fa-bars text-[25px]"></i>
+				</div>
+			</div>
+
+		</nav>
+	</header>
+	<main class="bg-main min-h-[1000px]">
+	</main>
+	<script src="/js/header.js"></script>
 </body>
 </html>
