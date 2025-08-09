@@ -504,8 +504,14 @@
   .h-\[800px\] {
     height: 800px;
   }
+  .h-\[max\] {
+    height: max;
+  }
   .h-full {
     height: 100%;
+  }
+  .h-max {
+    height: max-content;
   }
   .w-0 {
     width: calc(var(--spacing) * 0);
@@ -557,6 +563,9 @@
   }
   .w-\[120px\] {
     width: 120px;
+  }
+  .w-\[140px\] {
+    width: 140px;
   }
   .w-\[150px\] {
     width: 150px;
@@ -1004,6 +1013,9 @@
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
+  }
   .p-6 {
     padding: calc(var(--spacing) * 6);
   }
@@ -1214,8 +1226,14 @@
   .text-\[25px\] {
     font-size: 25px;
   }
+  .text-\[28px\] {
+    font-size: 28px;
+  }
   .text-\[30px\] {
     font-size: 30px;
+  }
+  .text-\[35px\] {
+    font-size: 35px;
   }
   .text-\[40px\] {
     font-size: 40px;
@@ -1229,6 +1247,18 @@
   .leading-0 {
     --tw-leading: calc(var(--spacing) * 0);
     line-height: calc(var(--spacing) * 0);
+  }
+  .leading-5 {
+    --tw-leading: calc(var(--spacing) * 5);
+    line-height: calc(var(--spacing) * 5);
+  }
+  .leading-10 {
+    --tw-leading: calc(var(--spacing) * 10);
+    line-height: calc(var(--spacing) * 10);
+  }
+  .leading-12 {
+    --tw-leading: calc(var(--spacing) * 12);
+    line-height: calc(var(--spacing) * 12);
   }
   .leading-\[20px\] {
     --tw-leading: 20px;
@@ -1738,6 +1768,12 @@
       text-align: center;
     }
   }
+  .max-m\:leading-\[90px\] {
+    @media (width < 1024px) {
+      --tw-leading: 90px;
+      line-height: 90px;
+    }
+  }
   .max-s\:w-\[80\%\] {
     @media (width < 768px) {
       width: 80%;
@@ -1870,6 +1906,11 @@
       width: 70%;
     }
   }
+  .m\:w-\[180px\] {
+    @media (width >= 1024px) {
+      width: 180px;
+    }
+  }
   .m\:w-\[200px\] {
     @media (width >= 1024px) {
       width: 200px;
@@ -1915,6 +1956,11 @@
       padding-top: 100px;
     }
   }
+  .m\:text-\[40px\] {
+    @media (width >= 1024px) {
+      font-size: 40px;
+    }
+  }
   .m\:text-\[50px\] {
     @media (width >= 1024px) {
       font-size: 50px;
@@ -1928,6 +1974,17 @@
   .m\:text-\[100px\] {
     @media (width >= 1024px) {
       font-size: 100px;
+    }
+  }
+  .m\:leading-\[90px\] {
+    @media (width >= 1024px) {
+      --tw-leading: 90px;
+      line-height: 90px;
+    }
+  }
+  .m\:whitespace-nowrap {
+    @media (width >= 1024px) {
+      white-space: nowrap;
     }
   }
   .l\:block {
