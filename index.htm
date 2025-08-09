@@ -11,7 +11,7 @@
       <link rel="stylesheet" href="src/input.css" />
       <link rel="stylesheet" href="src/output.css" />
       <link rel="stylesheet" href="src/style.css" />
-      <link rel="shortcut icon" href="/logo.png" type="image/x-icon">
+      <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       <title>Vionix Academy</title>
@@ -30,21 +30,15 @@
                      <li class="navmenu cursor-pointer whitespace-nowrap group relative"> <a href="#tedris">Tədris</a></i>
                         <span class="absolute left-1/2 bottom-[-5px] h-[2px] w-0 bg-white transition-all mt-2 duration-300 group-hover:w-full group-hover:left-0"></span> 
                      </li>
-                     <div class="panel bg-[#fff] rounded-2xl absolute w-[350px] top-[80px] transition-all duration-500 z-[999]">
-                        
-                     </div>
                      <li class="navmenu cursor-pointer whitespace-nowrap group relative"> <a href="#akademiya">Akademiya</a>
                         <span class="absolute left-1/2 bottom-[-5px] h-[2px] w-0 bg-white transition-all mt-2 duration-300 group-hover:w-full group-hover:left-0"></span> 
                      </li>
-                     
                      <li class="navmenu cursor-pointer whitespace-nowrap group relative">Korporotiv
                         <span class="absolute left-1/2 bottom-[-5px] h-[2px] w-0 bg-white transition-all mt-2 duration-300 group-hover:w-full group-hover:left-0"></span> 
                      </li>
-                     
                      <li class="navmenu cursor-pointer whitespace-nowrap group relative">Əlaqə 
                         <span class="absolute left-1/2 bottom-[-5px] h-[2px] w-0 bg-white transition-all mt-2 duration-300 group-hover:w-full group-hover:left-0"></span> 
                      </li>
-                    
                   </ul>
                </div>
             </div>
@@ -53,8 +47,23 @@
                   <button class="bg-white text-[#3b0a4d] font-bold px-4 m:px-6 py-3 rounded-xl cursor-pointer whitespace-nowrap">Indi Müraciət et</button>
                </div>
                <div class="s:hidden">
-                  <i class="fa-solid fa-bars text-[25px]"></i>
-               </div>
+                  <i id="menuBtn" class="fa-solid fa-bars text-[25px] cursor-pointer"></i>
+                
+                  <div id="menu" class="max-h-0 overflow-hidden bg-white absolute right-5 left-5 rounded-2xl text-[#000] text-[18px] top-[80px] z-[9999] transition-all duration-500 ease-in-out">
+                     <ul class="menu flex flex-col gap-4 p-4">
+                        <li><a href="#tedris" class="menu-link">Tədris</a></li>
+                        <li><a href="#akademiya" class="menu-link">Akademiya</a></li>
+                        <li><a href="#korporotiv" class="menu-link">Korporotiv</a></li>
+                        <li><a href="#elaqe" class="menu-link">Əlaqə</a></li>
+                    </ul>
+                    <div class="text-[25px] text-center text-[#771080] mt-2">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                  </div>
+                </div>
+                
             </div>
          </nav>
          <div class="container mx-auto py-[50px] flex flex-col m:flex-row m:justify-between items-center">
@@ -104,7 +113,6 @@
                         <li class="flex flex-col py-2 items-center gap-4 s:w-[50%] l:w-[30%]"> <img class="w-[120px]" src="/img/icons/webdesign.png" alt="">
                            <div class="flex items-center gap-2 text-[12px]">
                               <p class="rounded-2xl bg-[#aab1f2] p-2">Illustrator</p>
-                              <!-- <p class="rounded-2xl bg-[#aab1f2] p-2">After Effects</p> -->
                               <p class="rounded-2xl bg-[#aab1f2] p-2">InDesign</p>
                               <p class="rounded-2xl bg-[#aab1f2] p-2">Photoshop</p>
                            </div>
@@ -128,7 +136,6 @@
                         <div class="flex items-center gap-2 text-[12px]">
                            <p class="rounded-2xl bg-[#aab1f2] p-2">SEO</p>
                            <p class="rounded-2xl bg-[#aab1f2] p-2">Google Analytics</p>
-                           <!-- <p class="rounded-2xl bg-[#aab1f2] p-2">E-mail Marketing</p> -->
                            <p class="rounded-2xl bg-[#aab1f2] p-2">Google Ads</p>
                         </div>
                         Digital Marketing</li>
@@ -143,7 +150,6 @@
                         <div class="flex items-center gap-2 text-[12px]">
                            <p class="rounded-2xl bg-[#aab1f2] p-2">React Native</p>
                            <p class="rounded-2xl bg-[#aab1f2] p-2">Kotlin Into</p>
-                           <!-- <p class="rounded-2xl bg-[#aab1f2] p-2">Flutter Into</p> -->
                            <p class="rounded-2xl bg-[#aab1f2] p-2">Swift Closure</p>
                         </div>
                         Mobile Application Development</li>
@@ -213,7 +219,7 @@
                      <span></span>
                   </div>
                </div>
-               <div class="static mt-5 md:mt-0 md:absolute -bottom-24 left-1/2 md:-translate-x-1/2 z-10 max-w-5xl w-full p-6 bg-[#c7cbf4] text- rounded-2xl border-2 border-[#9ea5f0] flex flex-col md:flex-row items-center justify-between gap-6">
+               <div class="static mt-5 md:mt-0 md:absolute -bottom-24 left-1/2 md:-translate-x-1/2 z-10 max-w-5xl w-full p-6 bg-[#5c5e76] text-white rounded-2xl border-2 border-[#9ea5f0] flex flex-col md:flex-row items-center justify-between gap-6">
                   <!-- Left side: Sign up buttons -->
                   <div class="w-full md:w-[40%] flex flex-col items-center md:items-start">
                      <!-- Google Sign Up -->
@@ -244,7 +250,7 @@
                      </div>
 
                      <!-- More ways button -->
-                     <button class="w-full bg-[#cf0884] text-white hover:bg-white hover:text-[#cf0884] hover:border-[#cf0884] hover:border transition-all duration-[.3s] cursor-pointer font-semibold py-3 px-6 rounded-lg">More ways to sign up</button>
+                     <button class="w-full bg-[#7a074e] text-white hover:bg-white hover:text-[#7a074e] hover:border-[#cf0884] hover:border transition-all duration-[.3s] cursor-pointer font-semibold py-3 px-6 rounded-lg">More ways to sign up</button>
                   </div>
 
                   <!-- Right side: Text content -->
@@ -255,7 +261,7 @@
             </div>
 
             <div class="container mx-auto py-10 md:pt-32">
-               <pre class="text-center text-xl text-white/90 mb-5">Our learners work at</pre>
+               <pre class="text-center px-2 text-xl text-white/90 mb-5">Our learners work at</pre>
                <div class="w-full flex flex-wrap gap-10 lg:gap-16 justify-center items-center">
                   <img src="./img/Apple simple white logo.svg" alt="brand" />
                   <img src="./img/EA simple white logo.svg" alt="brand" />
@@ -270,18 +276,18 @@
             </div>
 
             <div class="mx-3">
-				<div class="container mx-auto x-3 flex items-center justify-between gap-6 p-6 bg-[#c7cbf4] rounded-lg border border-transparent shadow-sm">
+				<div class="container mx-auto x-3 flex items-center justify-between gap-6 p-6 bg-[#5c5e76] rounded-lg border border-transparent shadow-sm">
                <!-- Sol: Dotted Icon Alanı -->
                <div class="w-3 h-full border-l-4 border-dotted border-white"></div>
 
                <!-- Orta: Metin Alanı -->
                <div class="flex flex-col">
-                  <h3 class="text-[#cf0884] font-bold font-mono text-[20px]">» Transform your team with Codecademy Teams training</h3>
-                  <p class=" text-sm mt-1">Help everyone on your team build job-ready skills with a plan that offers flexible content assignment, progress tracking, and more.</p>
+                  <h3 class="text-[#7a074e] font-bold font-mono text-[20px]">» Transform your team with Codecademy Teams training</h3>
+                  <p class="text-white text-sm mt-1">Help everyone on your team build job-ready skills with a plan that offers flexible content assignment, progress tracking, and more.</p>
                </div>
 
                <!-- Sağ: Ok Simgesi -->
-               <div class="text-[#cf0884] text-2xl">➜</div>
+               <div class="text-[#7a074e] text-2xl">➜</div>
             </div>
 			</div>
          </section>
@@ -300,7 +306,7 @@
                <div class="py-[20px]">
                   <div class="flex flex-col-reverse l:flex-row items-center ">
                      <ol class="l:list-disc l:px-[60px] py-[10px] text-[18px] s:w-[80%] l:w-[50%]">
-                        <h1 class="font-bold text-[28px] py-[20px] whitespace-nowrap">Akademiya kimlər üçündür ?</h1>
+                        <h1 class="font-bold text-[25px] py-[20px] whitespace-nowrap">Akademiya kimlər üçündür ?</h1>
                         <li>İstənilən ixtisasda oxuyan ancaq texnologiyaya və müasir peşələrə həvəsli tələbələr</li>
                         <li>Universiteti yeni bitirmiş məzunlar</li>
                         <li>Tamamilə fərqli sahədə işləyən şəxslər</li>
