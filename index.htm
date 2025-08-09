@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mozilla+Headline:wght@200..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <link rel="stylesheet" href="src/font.css" />
       <link rel="stylesheet" href="src/input.css" />
@@ -13,249 +16,142 @@
       <title>Vionix Academy</title>
    </head>
    <body>
-      <header class="bg-main text-white relative">
-         <nav class="container mx-auto flex justify-between items-center px-6 py-2">
-            <div class="flex gap-6">
+      <header style="background: url('/img/vionix.jpg');" class="h-[100vh] bg-[#6e6e6] text-white relative">
+         <nav class="container mx-auto flex justify-between items-center py-2">
+            <div class="flex gap-6 items-center">
                <div>
-                  <a href="">Logo</a>
+                  <a href="/index.htm">
+                     <img class=" w-[180px]" src="/img/white-logovionix.png" alt="Vionix Logo" />
+                  </a>
                </div>
-               <div class="hidden l:block">
+               <div class="hidden s:block">
                   <ul class="menu flex gap-4">
-                     <li onclick="togglePanel(this)" class="navmenu hover:text-yellow cursor-pointer">Catalog <i class="fa-solid fa-caret-down"></i></li>
-                     <div class="panel absolute left-0 top-[100%] min-w-[1024px] overflow-hidden h-0 transition-all duration-500 z-[999]">
-                        <div class="flex bg-white text-black items-center">
-                           <div class="px-[24px] py-[32px] flex flex-col justify-between h-[360px] border-b">
-                              <div>
-                                 <p class="text-[20px] mb-2 font-medium">Popular course topics</p>
-                                 <p class="w-[207px] text-[14px]">Explore free or paid courses in topics that interest you.</p>
-                              </div>
-                              <button class="bg-[#3a10e5] rounded-md text-white py-2">Explore all courses</button>
-                           </div>
-                           <div class="bg-[#10162f] text-white w-full border-l-0 border border-white">
-                              <div class="px-[48px] py-[32px]">
-                                 <ul class="columns-3">
-                                    <li class="py-2 hover:text-yellow">Python</li>
-                                    <li class="py-2 hover:text-yellow">JavaScript</li>
-                                    <li class="py-2 hover:text-yellow">HTML & CSS</li>
-                                    <li class="py-2 hover:text-yellow">SQL</li>
-                                    <li class="py-2 hover:text-yellow">Java</li>
-                                    <li class="py-2 hover:text-yellow">C++</li>
-                                    <li class="py-2 hover:text-yellow">C#</li>
-                                    <li class="py-2 hover:text-yellow">C</li>
-                                    <li class="py-2 hover:text-yellow">PHP</li>
-                                    <li class="py-2 hover:text-yellow">R</li>
-                                    <li class="py-2 hover:text-yellow">IT</li>
-                                    <li class="py-2 hover:text-yellow">Cybersecurity</li>
-                                    <li class="py-2 hover:text-yellow">Cloud computing</li>
-                                    <li class="py-2 hover:text-yellow">AI</li>
-                                    <li class="py-2 hover:text-yellow">Web development</li>
-                                    <li class="py-2 hover:text-yellow">Data science</li>
-                                    <li class="py-2 hover:text-yellow">Web design</li>
-                                    <li class="py-2 hover:text-yellow">Professional skills</li>
-                                 </ul>
-                              </div>
-                              <div class="bg-[#0b0d1c] py-[16px] px-[48px] border-l-0 border border-white">
-                                 <p>Want to help shape digital products? Check out the new UX Designer career path.</p>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="flex bg-white text-black">
-                           <div class="px-[24px] py-[32px] border-b">
-                              <p class="text-[20px] mb-2 font-medium">Top career paths</p>
-                              <p class="w-[207px] text-[14px]">Choose your career. We'll teach you the skills to get job-ready.</p>
-                           </div>
-                           <div class="bg-[#10162f] text-white border-l-0 border-t-0 border border-white w-full">
-                              <div class="px-[48px] py-[32px]">
-                                 <ul class="columns-3">
-                                    <li class="py-2 hover:text-yellow">Full-Stack Engineer</li>
-                                    <li class="py-2 hover:text-yellow">Back-End Engineer</li>
-                                    <li class="py-2 hover:text-yellow">iOS Developer</li>
-                                    <li class="py-2 hover:text-yellow">Front-End Engineer</li>
-                                    <li class="py-2 hover:text-yellow">Computer Science</li>
-                                    <li class="py-2 hover:text-yellow">Data Scientist</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="flex bg-white text-black">
-                           <div class="px-[24px] py-[32px] border-b">
-                              <p class="text-[20px] mb-2 font-medium">Live Learning</p>
-                              <p class="w-[207px] text-[14px]">Build skills faster through live learning with expert instructors.</p>
-                           </div>
-                           <div class="bg-[#10162f] text-white border-l-0 border-t-0 border border-white w-full">
-                              <div class="px-[48px] py-[32px] flex items-start gap-10">
-                                 <div class="flex flex-col">
-                                    <p class="font-bold flex items-center gap-1">Bootcamps <span class="bg-yellow text-[10px] text-black py-0.5 px-2 rounded-xl">New</span></p>
-                                    <p class="py-2 text-[14px] w-[150px]">Learn live from industry experts.</p>
-                                 </div>
-                                 <div class="flex flex-col">
-                                    <p class="font-bold flex items-center gap-1">Codecademy x GK <span class="bg-yellow text-[10px] text-black py-0.5 px-2 rounded-xl">New</span></p>
-                                    <p class="py-2 text-[14px] w-[150px]">Instructor-led courses, offered via our partner organization.</p>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="bg-[#10162f] text-white py-[16px] px-[24px] w-full flex gap-8 items-center border-r border-b border-white">
-                           <p>Not sure where to begin?</p>
-                           <a class="text-yellow text-[14px]">Take our quiz <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
-                        </div>
+                     <li class="navmenu cursor-pointer whitespace-nowrap group relative"> <a href="#tedris">Tədris</a></i>
+                        <span class="absolute left-1/2 bottom-[-5px] h-[2px] w-0 bg-white transition-all mt-2 duration-300 group-hover:w-full group-hover:left-0"></span> 
+                     </li>
+                     <div class="panel bg-[#fff] rounded-2xl absolute w-[350px] top-[80px] transition-all duration-500 z-[999]">
+                        
                      </div>
-                     <li onclick="togglePanel(this)" class="navmenu hover:text-yellow cursor-pointer">Resources <i class="fa-solid fa-caret-down"></i></li>
-                     <div class="panel absolute left-0 top-[100%] min-w-[1024px] overflow-y-scroll overflow-hidden h-0 transition-all duration-500 z-[999]">
-                        <div class="flex bg-white text-black items-center">
-                           <div class="p-[32px] flex flex-col justify-between border-b w-[31%]">
-                              <div>
-                                 <p class="text-[20px] mb-2 font-medium">Docs</p>
-                                 <p class="w-[150px] text-[14px]">Find definitions, code syntax, and more -- or contribute your own code documentation.</p>
-                              </div>
-                              <div class="flex flex-col gap-2 py-4">
-                                 <a class="text-[#3a10e5] text-[14px]">View all docs →</a>
-                                 <a class="text-[#3a10e5] text-[14px]">Contribute to docs →</a>
-                              </div>
-                           </div>
-                           <div class="bg-[#10162f] text-white size-full border-l-0 border border-white">
-                              <div class="p-[55px]">
-                                 <ul class="columns-3">
-                                    <li class="py-2 hover:text-yellow">C</li>
-                                    <li class="py-2 hover:text-yellow">HTML</li>
-                                    <li class="py-2 hover:text-yellow">Python</li>
-                                    <li class="py-2 hover:text-yellow">C++</li>
-                                    <li class="py-2 hover:text-yellow">Java</li>
-                                    <li class="py-2 hover:text-yellow">React</li>
-                                    <li class="py-2 hover:text-yellow">CSS</li>
-                                    <li class="py-2 hover:text-yellow">JavaScript</li>
-                                    <li class="py-2 hover:text-yellow">SQL</li>
-                                    <li class="py-2 hover:text-yellow">Git</li>
-                                    <li class="py-2 hover:text-yellow">PHP</li>
-                                    <li class="py-2 hover:text-yellow">UI/UX</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="flex bg-white text-black">
-                           <div class="p-[32px] border-b w-[31%]">
-                              <p class="text-[20px] mb-2 font-medium">Learning & practice tools</p>
-                           </div>
-                           <div class="bg-[#10162f] text-white border-l-0 border-t-0 border border-white w-full">
-                              <div class="px-[48px] py-[32px]">
-                                 <ul class="columns-3">
-                                    <li class="py-2 hover:text-yellow flex flex-col">
-                                       <p class="font-bold pb-1">Articles</p>
-                                       <p class="w-[180px] text-[14px]">Learn about technical concepts.</p>
-                                    </li>
-                                    <li class="py-2 hover:text-yellow flex flex-col">
-                                       <p class="font-bold pb-1">Cheatsheets</p>
-                                       <p class="w-[180px] text-[14px]">Review concepts from your courses.</p>
-                                    </li>
-                                    <li class="py-2 hover:text-yellow flex flex-col">
-                                       <p class="font-bold pb-1">Code challenges</p>
-                                       <p class="w-[180px] text-[14px]">Test your knowledge and prep for interviews.</p>
-                                    </li>
-                                    <li class="py-2 hover:text-yellow flex flex-col">
-                                       <p class="font-bold pb-1">Projects</p>
-                                       <p class="w-[180px] text-[14px]">Practice and build your portfolio.</p>
-                                    </li>
-                                    <li class="py-2 hover:text-yellow flex flex-col">
-                                       <p class="font-bold pb-1">Videos</p>
-                                       <p class="w-[180px] text-[14px]">Watch tutorials, project walkthroughs, and more.</p>
-                                    </li>
-                                    <li class="py-2 hover:text-yellow flex flex-col">
-                                       <p class="font-bold pb-1">Workspaces</p>
-                                       <p class="w-[180px] text-[14px]">Build and share projects in your browser.</p>
-                                    </li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="flex bg-white text-black">
-                           <div class="p-[32px] w-[31%]">
-                              <p class="text-[20px] mb-2 font-medium w-[150px]">Inspiration & career</p>
-                              <a class="text-[#3a10e5] text-[14px]">View all blog topics →</a>
-                           </div>
-                           <div class="bg-[#10162f] w-full text-white border-l-0 border-t-0 border border-white">
-                              <div class="px-[48px] py-[32px] flex items-start gap-10">
-                                 <ul class="columns-3">
-                                    <li class="py-2 hover:text-yellow flex flex-col">
-                                       <p class="font-bold pb-1">Career advice</p>
-                                       <p class="w-[180px] text-[14px]">Get answers to questions about coding careers.</p>
-                                    </li>
-                                    <li class="py-2 hover:text-yellow flex flex-col">
-                                       <p class="font-bold pb-1">Learning tips</p>
-                                       <p class="w-[180px] text-[14px]">Learn where to start and how to stay motivated.</p>
-                                    </li>
-                                    <li class="py-2 hover:text-yellow flex flex-col">
-                                       <p class="font-bold pb-1 flex items-center gap-1">Career Center <span class="bg-yellow text-[10px] text-black py-0.5 px-2 rounded-xl">New</span></p>
-                                       <p class="w-[180px] text-[14px]">Get tools to reach your tech career goals.</p>
-                                    </li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <li onclick="togglePanel(this)" class="navmenu hover:text-yellow cursor-pointer">Community <i class="fa-solid fa-caret-down"></i></li>
-                     <div class="panel absolute top-[100%] left-[380px] overflow-y-scroll overflow-hidden h-0 transition-all duration-500 z-[999]">
-                        <ul class="border border-white py-3 bg-[#10162f]">
-                           <li class="py-2 hover:text-yellow">
-                              <a class="flex items-center gap-2 py-2 px-[24px]">
-                                 <i class="fa-solid fa-globe text-[25px]"></i>
-                                 Visit Community
-                              </a>
-                           </li>
-                           <li class="py-2 hover:text-yellow">
-                              <a class="flex items-center gap-2 py-2 px-[24px]">
-                                 <i class="fa-solid fa-calendar-days text-[25px]"></i>
-                                 Events
-                              </a>
-                           </li>
-                           <li class="py-2 hover:text-yellow">
-                              <a class="flex items-center gap-2 py-2 px-[24px]">
-                                 <i class="fa-solid fa-bookmark text-[25px]"></i>
-                                 Learner Stories
-                              </a>
-                           </li>
-                           <li class="py-2 hover:text-yellow">
-                              <a class="flex items-center gap-2 py-2 px-[24px]">
-                                 <i class="fa-solid fa-user-pen text-[25px]"></i>
-                                 Code Crew
-                              </a>
-                           </li>
-                        </ul>
-                     </div>
-                     <li onclick="togglePanel(this)" class="navmenu hover:text-yellow cursor-pointer">Pricing <i class="fa-solid fa-caret-down"></i></li>
-                     <div class="panel absolute top-[100%] left-[510px] overflow-y-scroll overflow-hidden h-0 transition-all duration-500 z-[999]">
-                        <ul class="border border-white py-3 bg-[#10162f]">
-                           <li class="py-2 px-[24px] hover:text-yellow">
-                              <a>For Individuals</a>
-                           </li>
-                           <li class="py-2 px-[24px] hover:text-yellow">
-                              <a>For Students</a>
-                           </li>
-                           <li class="py-2 px-[24px] hover:text-yellow">
-                              <a>For Business</a>
-                           </li>
-                        </ul>
-                     </div>
-                     <li class="hover:text-yellow cursor-pointer flex items-center gap-1">Live Learning <span class="bg-yellow text-[10px] text-black py-0.5 px-2 rounded-xl">New</span></li>
-                     <li class="hover:text-yellow cursor-pointer">New</li>
-                     <li class="hover:text-yellow cursor-pointer">For Business</li>
+                     <li class="navmenu cursor-pointer whitespace-nowrap group relative"> <a href="#akademiya">Akademiya</a>
+                        <span class="absolute left-1/2 bottom-[-5px] h-[2px] w-0 bg-white transition-all mt-2 duration-300 group-hover:w-full group-hover:left-0"></span> 
+                     </li>
+                     
+                     <li class="navmenu cursor-pointer whitespace-nowrap group relative">Community
+                        <span class="absolute left-1/2 bottom-[-5px] h-[2px] w-0 bg-white transition-all mt-2 duration-300 group-hover:w-full group-hover:left-0"></span> 
+                     </li>
+                     
+                     <li class="navmenu cursor-pointer whitespace-nowrap group relative">Pricing 
+                        <span class="absolute left-1/2 bottom-[-5px] h-[2px] w-0 bg-white transition-all mt-2 duration-300 group-hover:w-full group-hover:left-0"></span> 
+                     </li>
+                    
                   </ul>
                </div>
             </div>
             <div class="flex gap-4 l:gap-8 items-center">
-               <div class="cursor-pointer">
-                  <i class="fa-solid fa-magnifying-glass text-[25px] hover:text-yellow"></i>
-               </div>
                <div>
-                  <button class="bg-yellow px-4 py-2 text-black rounded-xl cursor-pointer hover:bg-[#cca902]">Müraciət et</button>
+                  <button class="bg-white text-[#3b0a4d] font-bold px-4 m:px-6 py-3 rounded-xl cursor-pointer whitespace-nowrap">Indi Müraciət et</button>
                </div>
-               <div class="l:hidden">
+               <div class="s:hidden">
                   <i class="fa-solid fa-bars text-[25px]"></i>
                </div>
             </div>
          </nav>
+         <div class="container mx-auto py-[50px] flex flex-col m:flex-row m:justify-between items-center">
+            <div class="m:w-[60%] m:mt-[100px]">
+               <h1 class="capitalize leading-[90px] font-bold text-[50px] nunito-nunitofont s:text-[70px] max-m:flex flex-col justify-center items-center m:text-[80px] 2xl:text-[100px] m:w-[200px]">
+                  <span>web </span> 
+                  <span class="">foundation</span>
+               </h1>
+                  <h3 class="text-[30px] nunito-nunitofont leading-[50px] font-medium s:text-[40px] m:text-[50px] py-[20px] max-m:text-center m:pt-[50px]">Developer karyerani bizimla basla!</h3>
+            </div>
+            <div class="flex flex-wrap justify-center items-center gap-4 m:w-[50%]">
+               <div class="bg-[#ffffff98] text-black flex justify-center items-center border border-white rounded-2xl w-[200px] text-center text-[24px] h-[150px] p-[20px] animate-growUpFade" style="animation-delay: 0.2s">Praktiki bacarıqlar</div>
+               <div class="bg-[#ffffff98] text-black flex justify-center items-center border border-white rounded-2xl w-[200px] text-center text-[24px] h-[150px] p-[20px] animate-growUpFade" style="animation-delay: 0.4s">Mentor və kariyera dəstəyi</div>
+               <div class="bg-[#ffffff98] text-black flex justify-center items-center border border-white rounded-2xl w-[250px] text-center text-[24px] h-[150px] p-[20px] animate-growUpFade" style="animation-delay: 0.6s">HTML, CSS, VScode XAMPP, WordPress CMS</div>
+            </div>
+         </div>
       </header>
       <main>
-         <section class="h-full bg-center bg-no-repeat bg-cover pb-32" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/23729986/pexels-photo-23729986.jpeg')">
+         <section id="tedris" class=" py-[25px] bg-[#eee]">
+            <div class="container mx-auto">
+               <h1 class="text-[40px] px-4">Tədris Proqramlar</h1>
+               <div class="p-[20px]">
+                  <ul class="container mx-auto text-black text-[20px] font-medium flex l:gap-2 flex-col s:flex-row flex-wrap justify-center">
+                     <li class="flex flex-col py-2 items-center gap-4 cursor-pointer s:w-[50%] l:w-[30%]"><img class="w-[120px]" src="/img/icons/frontend.png" alt="">
+                        <div class="flex items-center gap-2 text-[12px]">
+                           <p class="rounded-2xl bg-[#aab1f2] p-2">HTML</p>
+                           <p class="rounded-2xl bg-[#aab1f2] p-2">CSS</p>
+                           <p class="rounded-2xl bg-[#aab1f2] p-2">JavaScript</p>
+                           <p class="rounded-2xl bg-[#aab1f2] p-2">React</p>
+                        </div>
+                        Front-End Development
+                     </li>
+                     <li class="flex flex-col py-2 items-center gap-4 cursor-pointer s:w-[50%] l:w-[30%]"> <img class="w-[120px]" src="/img/icons/backend.png" alt="">
+                        <div class="flex items-center gap-2 text-[12px]">
+                           <p class="rounded-2xl bg-[#aab1f2] p-2">Next.js</p>
+                           <p class="rounded-2xl bg-[#aab1f2] p-2">PHP</p>
+                           <p class="rounded-2xl bg-[#aab1f2] p-2">Node.js</p>
+                           <p class="rounded-2xl bg-[#aab1f2] p-2">TypeScript</p>
+                        </div>
+                        Back-End Development</li>
+                     <li class="flex flex-col py-2 items-center gap-4 cursor-pointer s:w-[50%] l:w-[30%]"> <img class="w-[120px]" src="/img/icons/fullstack.svg" alt="">
+                        <div class="flex items-center gap-2 text-[12px]">
+                           <p class="rounded-2xl bg-[#aab1f2] p-2">Front-End</p>
+                           <p class="rounded-2xl bg-[#aab1f2] p-2">Back-End</p>
+                        </div>
+                        FullStack Development</li>
+                        <li class="flex flex-col py-2 items-center gap-4 s:w-[50%] l:w-[30%]"> <img class="w-[120px]" src="/img/icons/webdesign.png" alt="">
+                           <div class="flex items-center gap-2 text-[12px]">
+                              <p class="rounded-2xl bg-[#aab1f2] p-2">Illustrator</p>
+                              <!-- <p class="rounded-2xl bg-[#aab1f2] p-2">After Effects</p> -->
+                              <p class="rounded-2xl bg-[#aab1f2] p-2">InDesign</p>
+                              <p class="rounded-2xl bg-[#aab1f2] p-2">Photoshop</p>
+                           </div>
+                           Web Design</li>
+                           <li class="flex flex-col py-2 items-center gap-4 cursor-pointer s:w-[50%] l:w-[30%]"> <img class="w-[120px]" src="/img/icons/dataanalitika.png" alt="">
+                              <div class="flex items-center gap-2 text-[12px]">
+                                 <p class="rounded-2xl bg-[#aab1f2] p-2">SQL</p>
+                                 <p class="rounded-2xl bg-[#aab1f2] p-2">PowerQuery</p>
+                                 <p class="rounded-2xl bg-[#aab1f2] p-2">MS Excel</p>
+                                 <p class="rounded-2xl bg-[#aab1f2] p-2">Python</p>
+                              </div>
+                        Data Science</li>
+                     <li class="flex flex-col py-2 items-center gap-4 cursor-pointer s:w-[50%] l:w-[30%]"> <img class="w-[120px]" src="/img/icons/cybersec.png" alt="">
+                        <div class="flex items-center gap-2 text-[12px]">
+                           <p class="rounded-2xl bg-[#aab1f2] p-2">Kompüter şəbəkələri</p>
+                           <p class="rounded-2xl bg-[#aab1f2] p-2">Linux ƏS</p>
+                           <p class="rounded-2xl bg-[#aab1f2] p-2">Kriptoqrafiya</p>
+                        </div>
+                        CyberSecurity</li>
+                     <li class="flex flex-col py-2 items-center gap-4 cursor-pointer s:w-[50%] l:w-[30%]"> <img class="w-[120px]" src="/img/icons/reqemsal.png" alt="">
+                        <div class="flex items-center gap-2 text-[12px]">
+                           <p class="rounded-2xl bg-[#aab1f2] p-2">SEO</p>
+                           <p class="rounded-2xl bg-[#aab1f2] p-2">Google Analytics</p>
+                           <!-- <p class="rounded-2xl bg-[#aab1f2] p-2">E-mail Marketing</p> -->
+                           <p class="rounded-2xl bg-[#aab1f2] p-2">Google Ads</p>
+                        </div>
+                        Digital Marketing</li>
+                     <li class="flex flex-col py-2 items-center gap-4 cursor-pointer s:w-[50%] l:w-[30%]"> <img class="w-[120px]" src="/img/icons/projmanage.svg" alt="">
+                        <div class="flex items-center gap-2 text-[12px]">
+                           <p class="rounded-2xl bg-[#aab1f2] p-2">Agile</p>
+                           <p class="rounded-2xl bg-[#aab1f2] p-2">Project Management Office</p>
+                           <p class="rounded-2xl bg-[#aab1f2] p-2">Scrum</p>
+                        </div>
+                        IT Project Management</li>
+                     <li class="flex flex-col py-2 items-center gap-4 cursor-pointer s:w-[50%] l:w-[30%]"> <img class="w-[120px]" src="/img/icons/mobileprog.svg" alt="">
+                        <div class="flex items-center gap-2 text-[12px]">
+                           <p class="rounded-2xl bg-[#aab1f2] p-2">React Native</p>
+                           <p class="rounded-2xl bg-[#aab1f2] p-2">Kotlin Into</p>
+                           <!-- <p class="rounded-2xl bg-[#aab1f2] p-2">Flutter Into</p> -->
+                           <p class="rounded-2xl bg-[#aab1f2] p-2">Swift Closure</p>
+                        </div>
+                        Mobile Application Development</li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+         <section style="background-image: url('/img/violetbg.png');"
+          class=" bg-center bg-no-repeat bg-cover pb-32" >
             <div class="container relative px-3 mx-auto pt-[50px]">
                <div class="swiper mySwiper h-[600px] rounded-2xl">
                   <div class="swiper-wrapper h-full">
@@ -316,11 +212,11 @@
                      <span></span>
                   </div>
                </div>
-               <div class="static mt-5 md:mt-0 md:absolute -bottom-24 left-1/2 md:-translate-x-1/2 z-10 max-w-5xl w-full p-6 bg-black text-white rounded-2xl border-2 border-[#ffd301] flex flex-col md:flex-row items-center justify-between gap-6">
+               <div class="static mt-5 md:mt-0 md:absolute -bottom-24 left-1/2 md:-translate-x-1/2 z-10 max-w-5xl w-full p-6 bg-[#c7cbf4] text- rounded-2xl border-2 border-[#9ea5f0] flex flex-col md:flex-row items-center justify-between gap-6">
                   <!-- Left side: Sign up buttons -->
                   <div class="w-full md:w-[40%] flex flex-col items-center md:items-start">
                      <!-- Google Sign Up -->
-                     <button class="flex items-center justify-center w-full bg-white hover:bg-transparent text-black hover:text-white border-1 border-white transition-all duration-[.3s] font-semibold py-3 px-6 rounded-lg mb-4 cursor-pointer">
+                     <button class="flex items-center justify-center w-full bg-white hover:bg-[#cf0884] text-[#132451] hover:text-white border-1 border-white transition-all duration-[.3s] font-semibold py-3 px-6 rounded-lg mb-4 cursor-pointer">
                         <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" class="w-5 h-5 mr-2" />
                         Sign up with Google
                      </button>
@@ -347,7 +243,7 @@
                      </div>
 
                      <!-- More ways button -->
-                     <button class="w-full bg-[#ffd301] text-black hover:bg-[#ffd301]/80 transition-all duration-[.3s] cursor-pointer font-semibold py-3 px-6 rounded-lg">More ways to sign up</button>
+                     <button class="w-full bg-[#cf0884] text-white hover:bg-white hover:text-[#cf0884] hover:border-[#cf0884] hover:border transition-all duration-[.3s] cursor-pointer font-semibold py-3 px-6 rounded-lg">More ways to sign up</button>
                   </div>
 
                   <!-- Right side: Text content -->
@@ -373,81 +269,87 @@
             </div>
 
             <div class="mx-3">
-				<div class="container mx-auto x-3 flex items-center justify-between gap-6 p-6 bg-[#0d1117] rounded-lg border border-transparent shadow-sm">
+				<div class="container mx-auto x-3 flex items-center justify-between gap-6 p-6 bg-[#c7cbf4] rounded-lg border border-transparent shadow-sm">
                <!-- Sol: Dotted Icon Alanı -->
                <div class="w-3 h-full border-l-4 border-dotted border-white"></div>
 
                <!-- Orta: Metin Alanı -->
                <div class="flex flex-col">
-                  <h3 class="text-sky-400 font-mono text-lg font-medium">» Transform your team with Codecademy Teams training</h3>
-                  <p class="text-white text-sm mt-1">Help everyone on your team build job-ready skills with a plan that offers flexible content assignment, progress tracking, and more.</p>
+                  <h3 class="text-[#cf0884] font-bold font-mono text-[20px]">» Transform your team with Codecademy Teams training</h3>
+                  <p class=" text-sm mt-1">Help everyone on your team build job-ready skills with a plan that offers flexible content assignment, progress tracking, and more.</p>
                </div>
 
                <!-- Sağ: Ok Simgesi -->
-               <div class="text-sky-400 text-2xl">➜</div>
+               <div class="text-[#cf0884] text-2xl">➜</div>
             </div>
 			</div>
          </section>
+         <section id="akademiya" class="py-[30px] bg-[#eee]">
+            <div class="container mx-auto px-4">
+               <h1 class="text-[40px] pb-[20px] ">Akademiya haqqında</h1>
+               <div class="flex flex-col l:flex-row items-center gap-4">
+                  <div class="w-[80%] l:w-[60%]">
+                     <img class="2xl:max-w-[700px] rounded-3xl max-l:mx-auto" src="/img/akademiya.jpeg" alt="Akademiya" />
+                  </div>
+                  <div class="text-[18px] py-[20px] s:w-[80%] l:w-[40%]">
+                     <p>Akademiyanın nəzdində fəaliyyət göstərən karyera mərkəzi 100-dən çox özəl şirkət və dövlət qurumu ilə partnyorluq edərək, tələbə və məzunlara iş imkanları yaradır.</p>
+                     <p class="py-[20px]">100% təcrübə zəmanətli təhsil imkanı ilə tələbələrə klassik kurs metodunu unutduraraq birbaşa əmək bazarına kadr yetişdirmə rolu oynayır.</p>
+                  </div>
+               </div>
+               <div class="py-[20px]">
+                  <div class="flex flex-col-reverse l:flex-row items-center ">
+                     <ol class="l:list-disc l:px-[60px] py-[10px] text-[18px] s:w-[80%] l:w-[50%]">
+                        <h1 class="font-bold text-[30px] py-[20px] whitespace-nowrap">Akademiya kimlər üçündür ?</h1>
+                        <li>İstənilən ixtisasda oxuyan ancaq texnologiyaya və müasir peşələrə həvəsli tələbələr</li>
+                        <li>Universiteti yeni bitirmiş məzunlar</li>
+                        <li>Tamamilə fərqli sahədə işləyən şəxslər</li>
+                        <li>Yaxın 2-5 ildə xaricə köçməyi planlaşdıranlar</li>
+                        <li>Özü öyrənməkdə (self study) çətinlik çəkənlər</li>
+                        <li>Evdən (remote) və ya sərbəst (freelance) işlərdə işləməyi xoşlayanlar</li>
+                     </ol>
+                     <div class="w-[80%] l:w-[50%]">
+                        <img class="2xl:max-w-[700px] size-full m:h-[460px]! l:h-[339px]! bg-center bg-cover rounded-3xl " src="/img/notebook.jpeg" alt="" />
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+         </section>
+         <!-- <section class="h-full bg-center bg-cover px-[32px] py-[64px]" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://media.istockphoto.com/id/1247569904/vector/arrows-light-blue-abstract-futuristic-speed-on-black-background-vector-illustration.jpg?s=612x612&w=0&k=20&c=FsTw_Yq6QkfYQems8ysJtzE8kbMAR3x1_dv7TrwBqdI=')">
+            <div class="container text-white">
+               <div class="p-[24px] bg-[#010d0c]">
+                  <h2 style="word-spacing: 1rem;" class="text-[40px] tracking-widest">Build skills that stand out</h2>
+                  <div class="mb-[24px] flex border-b border-white">
+                     <p class="active px-[24px] pt-[24px] pb-3 ">Top subjects</p>
+                     <p class="px-[24px] pt-[24px] pb-3 ">Certification prep</p>
+                  </div>
+                  <div>
+                     <ul class="">
+                        <li class="bg-black rounded-md border border-[#333] p-[24px]"><a>Code foundations</a></li>
+                                          <li><a href=""></a></li> Python
+                                          HTML & CSS
+                                          Data science
+                                          Professional skills
+                                          Java
+                                          Web development
+                                          Data analytics
+                                          Load more
+                                          Looking for something else? 
+                                          Explore the catalog
+                        
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </section> -->
       </main>
+      <footer>
+
+      </footer>
 
       <script src="/js/header.js"></script>
+      <script src="/js/swiperTyped.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-      <script>
-         let typedInstance;
-
-         const startTypedInActiveSlide = () => {
-            const activeSlide = document.querySelector(".swiper-slide-active");
-            if (!activeSlide) return;
-
-            const textSpan = activeSlide.querySelector(".typed-text");
-            const textData = activeSlide.getAttribute("data-text");
-
-            if (!textSpan || !textData) return;
-
-            const strings = JSON.parse(textData);
-
-            if (typedInstance) {
-               typedInstance.destroy();
-            }
-
-            typedInstance = new Typed(textSpan, {
-               strings: strings,
-               typeSpeed: 85,
-               backSpeed: 30,
-               backDelay: 1500,
-               //    loop: true,
-               //    showCursor: true,
-            });
-         };
-
-         const progressCircle = document.querySelector(".autoplay-progress svg");
-         const progressContent = document.querySelector(".autoplay-progress span");
-         var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: {
-               delay: 2500,
-               disableOnInteraction: false,
-            },
-            // pagination: {
-            //    el: ".swiper-pagination",
-            //    clickable: true,
-            // },
-            // navigation: {
-            //    nextEl: ".swiper-button-next",
-            //    prevEl: ".swiper-button-prev",
-            // },
-            on: {
-               init: startTypedInActiveSlide,
-               slideChangeTransitionStart: startTypedInActiveSlide,
-               autoplayTimeLeft(s, time, progress) {
-                  progressCircle.style.setProperty("--progress", 1 - progress);
-                  progressContent.textContent = `${Math.ceil(time / 1000)}s`;
-               },
-            },
-         });
-
-         window.addEventListener("DOMContentLoaded", startTypedInActiveSlide);
-      </script>
+      
    </body>
 </html>

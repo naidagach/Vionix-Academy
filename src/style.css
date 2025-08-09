@@ -1,5 +1,30 @@
+*{
+  font-family: "Nunito", sans-serif;
+}
 @media only screen and (min-width:1300px){
     .container{
       max-width: 1300px;
     }
+}
+
+@keyframes growUpFade {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-growUpFade {
+  animation: growUpFade 0.6s ease-out forwards;
+}
+
+.nunito-nunitofont {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: normal; */
+  font-style: normal;
 }
