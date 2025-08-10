@@ -3,9 +3,11 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mozilla+Headline:wght@200..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mozilla+Headline:wght@200..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+         rel="stylesheet" />
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <link rel="stylesheet" href="src/font.css" />
       <link rel="stylesheet" href="src/input.css" />
@@ -17,7 +19,7 @@
       <title>Vionix Academy</title>
    </head>
    <body>
-      <header style="background: url('/img/vionix.jpg');" class="h-full m:h-[100vh] bg-[#6e6e6] text-white relative">
+      <header style="background: url('/img/vionix.jpg')" class="h-full m:h-[100vh] bg-[#6e6e6] text-white relative">
          <nav class="container mx-auto flex justify-between items-center p-4 py-4">
             <div class="flex gap-6 items-center">
                <div>
@@ -27,17 +29,21 @@
                </div>
                <div class="hidden s:block">
                   <ul class="menu flex gap-4">
-                     <li class="navmenu cursor-pointer whitespace-nowrap group relative"> <a href="#tedris">Tədris</a></i>
-                        <span class="absolute left-1/2 bottom-[-5px] h-[2px] w-0 bg-white transition-all mt-2 duration-300 group-hover:w-full group-hover:left-0"></span> 
+                     <li class="navmenu cursor-pointer whitespace-nowrap group relative">
+                        <a href="#tedris">Tədris</a>
+                        <span class="absolute left-1/2 bottom-[-5px] h-[2px] w-0 bg-white transition-all mt-2 duration-300 group-hover:w-full group-hover:left-0"></span>
                      </li>
-                     <li class="navmenu cursor-pointer whitespace-nowrap group relative"> <a href="#akademiya">Akademiya</a>
-                        <span class="absolute left-1/2 bottom-[-5px] h-[2px] w-0 bg-white transition-all mt-2 duration-300 group-hover:w-full group-hover:left-0"></span> 
+                     <li class="navmenu cursor-pointer whitespace-nowrap group relative">
+                        <a href="#akademiya">Akademiya</a>
+                        <span class="absolute left-1/2 bottom-[-5px] h-[2px] w-0 bg-white transition-all mt-2 duration-300 group-hover:w-full group-hover:left-0"></span>
                      </li>
-                     <li class="navmenu cursor-pointer whitespace-nowrap group relative">Korporotiv
-                        <span class="absolute left-1/2 bottom-[-5px] h-[2px] w-0 bg-white transition-all mt-2 duration-300 group-hover:w-full group-hover:left-0"></span> 
+                     <li class="navmenu cursor-pointer whitespace-nowrap group relative">
+                        <a href="#korporativ">Korporativ</a>
+                        <span class="absolute left-1/2 bottom-[-5px] h-[2px] w-0 bg-white transition-all mt-2 duration-300 group-hover:w-full group-hover:left-0"></span>
                      </li>
-                     <li class="navmenu cursor-pointer whitespace-nowrap group relative"><a href="#elaqe">Əlaqə</a> 
-                        <span class="absolute left-1/2 bottom-[-5px] h-[2px] w-0 bg-white transition-all mt-2 duration-300 group-hover:w-full group-hover:left-0"></span> 
+                     <li class="navmenu cursor-pointer whitespace-nowrap group relative">
+                        <a href="#elaqe">Əlaqə</a>
+                        <span class="absolute left-1/2 bottom-[-5px] h-[2px] w-0 bg-white transition-all mt-2 duration-300 group-hover:w-full group-hover:left-0"></span>
                      </li>
                   </ul>
                </div>
@@ -48,31 +54,30 @@
                </div>
                <div class="s:hidden">
                   <i id="menuBtn" class="fa-solid fa-bars text-[25px] cursor-pointer"></i>
-                
+
                   <div id="menu" class="max-h-0 overflow-hidden bg-white absolute right-5 left-5 rounded-2xl text-[#000] text-[18px] top-[80px] z-[9999] transition-all duration-500 ease-in-out">
                      <ul class="menu flex flex-col gap-4 p-4">
                         <li><a href="#tedris" class="menu-link">Tədris</a></li>
                         <li><a href="#akademiya" class="menu-link">Akademiya</a></li>
-                        <li><a href="#korporotiv" class="menu-link">Korporotiv</a></li>
+                        <li><a href="#korporativ" class="menu-link">Korporativ</a></li>
                         <li><a href="#elaqe" class="menu-link">Əlaqə</a></li>
-                    </ul>
-                    <div class="text-[25px] text-center text-[#771080] mt-2">
+                     </ul>
+                     <div class="text-[25px] text-center text-[#771080] mt-2">
                         <i class="fa-brands fa-facebook"></i>
                         <i class="fa-brands fa-instagram"></i>
                         <i class="fa-brands fa-linkedin"></i>
-                    </div>
+                     </div>
                   </div>
-                </div>
-                
+               </div>
             </div>
          </nav>
          <div class="container mx-auto py-[50px] flex flex-col m:flex-row m:justify-between items-center">
             <div class="m:w-[60%] m:mt-[100px] px-2">
                <h1 class="capitalize leading-12 m:leading-[90px] font-bold text-[50px] nunito-nunitofont s:text-[70px] max-m:flex flex-col justify-center items-center m:text-[80px] 2xl:text-[100px] m:w-[200px]">
-                  <span>web </span> 
+                  <span>web </span>
                   <span class="">foundation</span>
                </h1>
-                  <h3 class="text-[30px] nunito-nunitofont leading-[50px] font-medium s:text-[40px] m:text-[50px] py-[20px] max-m:text-center m:pt-[50px]">Developer karyerani bizimla basla!</h3>
+               <h3 class="text-[30px] nunito-nunitofont leading-[50px] font-medium s:text-[40px] m:text-[50px] py-[20px] max-m:text-center m:pt-[50px]">Developer karyerani bizimla basla!</h3>
             </div>
             <div class="flex flex-wrap justify-center items-center gap-4 m:w-[50%]">
                <div class="bg-[#ffffff98] text-black flex justify-center items-center border border-white rounded-2xl w-[250px] text-center text-[24px] h-[150px] p-[20px] animate-growUpFade" style="animation-delay: 0.2s">Praktiki bacarıqlar</div>
@@ -82,12 +87,13 @@
          </div>
       </header>
       <main>
-         <section id="tedris" class=" py-[25px] bg-[#eee]">
+         <section id="tedris" class="py-[25px] bg-[#eee]">
             <div class="container mx-auto">
                <h1 class="text-[35px] m:text-[40px] px-4">Tədris Proqramlar</h1>
                <div class="p-[20px]">
                   <ul class="container mx-auto text-black text-[20px] font-medium flex l:gap-2 flex-col s:flex-row flex-wrap justify-center">
-                     <li class="flex flex-col py-2 items-center gap-4 cursor-pointer s:w-[50%] l:w-[30%]"><img class="w-[120px]" src="/img/icons/frontend.png" alt="">
+                     <li class="flex flex-col py-2 items-center gap-4 cursor-pointer s:w-[50%] l:w-[30%]">
+                        <img class="w-[120px]" src="/img/icons/frontend.png" alt="" />
                         <div class="flex items-center gap-2 text-[12px]">
                            <p class="rounded-2xl bg-[#aab1f2] p-2">HTML</p>
                            <p class="rounded-2xl bg-[#aab1f2] p-2">CSS</p>
@@ -96,7 +102,8 @@
                         </div>
                         Front-End Development
                      </li>
-                     <li class="flex flex-col py-2 items-center gap-4 cursor-pointer s:w-[50%] l:w-[30%]"> <img class="w-[120px]" src="/img/icons/backend.png" alt="">
+                     <li class="flex flex-col py-2 items-center gap-4 cursor-pointer s:w-[50%] l:w-[30%]">
+                        <img class="w-[120px]" src="/img/icons/backend.png" alt="" />
                         <div class="flex items-center gap-2 text-[12px]">
                            <p class="rounded-2xl bg-[#aab1f2] p-2">Next.js</p>
                            <p class="rounded-2xl bg-[#aab1f2] p-2">PHP</p>
@@ -105,14 +112,16 @@
                         </div>
                         Back-End Development
                      </li>
-                     <li class="flex flex-col py-2 items-center gap-4 cursor-pointer s:w-[50%] l:w-[30%]"> <img class="w-[120px]" src="/img/icons/fullstack.svg" alt="">
+                     <li class="flex flex-col py-2 items-center gap-4 cursor-pointer s:w-[50%] l:w-[30%]">
+                        <img class="w-[120px]" src="/img/icons/fullstack.svg" alt="" />
                         <div class="flex items-center gap-2 text-[12px]">
                            <p class="rounded-2xl bg-[#aab1f2] p-2">Front-End</p>
                            <p class="rounded-2xl bg-[#aab1f2] p-2">Back-End</p>
                         </div>
                         FullStack Development
                      </li>
-                     <li class="flex flex-col py-2 items-center gap-4 s:w-[50%] l:w-[30%]"> <img class="w-[120px]" src="/img/icons/webdesign.png" alt="">
+                     <li class="flex flex-col py-2 items-center gap-4 s:w-[50%] l:w-[30%]">
+                        <img class="w-[120px]" src="/img/icons/webdesign.png" alt="" />
                         <div class="flex items-center gap-2 text-[12px]">
                            <p class="rounded-2xl bg-[#aab1f2] p-2">Illustrator</p>
                            <p class="rounded-2xl bg-[#aab1f2] p-2">InDesign</p>
@@ -120,7 +129,8 @@
                         </div>
                         Web Design
                      </li>
-                     <li class="flex flex-col py-2 items-center gap-4 cursor-pointer s:w-[50%] l:w-[30%]"> <img class="w-[120px]" src="/img/icons/dataanalitika.png" alt="">
+                     <li class="flex flex-col py-2 items-center gap-4 cursor-pointer s:w-[50%] l:w-[30%]">
+                        <img class="w-[120px]" src="/img/icons/dataanalitika.png" alt="" />
                         <div class="flex items-center gap-2 text-[12px]">
                            <p class="rounded-2xl bg-[#aab1f2] p-2">SQL</p>
                            <p class="rounded-2xl bg-[#aab1f2] p-2">PowerQuery</p>
@@ -129,7 +139,8 @@
                         </div>
                         Data Science
                      </li>
-                     <li class="flex flex-col py-2 items-center gap-4 cursor-pointer s:w-[50%] l:w-[30%]"> <img class="w-[120px]" src="/img/icons/cybersec.png" alt="">
+                     <li class="flex flex-col py-2 items-center gap-4 cursor-pointer s:w-[50%] l:w-[30%]">
+                        <img class="w-[120px]" src="/img/icons/cybersec.png" alt="" />
                         <div class="flex items-center gap-2 text-[12px]">
                            <p class="rounded-2xl bg-[#aab1f2] p-2">Kompüter şəbəkələri</p>
                            <p class="rounded-2xl bg-[#aab1f2] p-2">Linux ƏS</p>
@@ -137,7 +148,8 @@
                         </div>
                         CyberSecurity
                      </li>
-                     <li class="flex flex-col py-2 items-center gap-4 cursor-pointer s:w-[50%] l:w-[30%]"> <img class="w-[120px]" src="/img/icons/reqemsal.png" alt="">
+                     <li class="flex flex-col py-2 items-center gap-4 cursor-pointer s:w-[50%] l:w-[30%]">
+                        <img class="w-[120px]" src="/img/icons/reqemsal.png" alt="" />
                         <div class="flex items-center gap-2 text-[12px]">
                            <p class="rounded-2xl bg-[#aab1f2] p-2">SEO</p>
                            <p class="rounded-2xl bg-[#aab1f2] p-2">Google Analytics</p>
@@ -145,7 +157,8 @@
                         </div>
                         Digital Marketing
                      </li>
-                     <li class="flex flex-col py-2 items-center gap-4 cursor-pointer s:w-[50%] l:w-[30%]"> <img class="w-[120px]" src="/img/icons/projmanage.svg" alt="">
+                     <li class="flex flex-col py-2 items-center gap-4 cursor-pointer s:w-[50%] l:w-[30%]">
+                        <img class="w-[120px]" src="/img/icons/projmanage.svg" alt="" />
                         <div class="flex items-center gap-2 text-[12px]">
                            <p class="rounded-2xl bg-[#aab1f2] p-2">Agile</p>
                            <p class="rounded-2xl bg-[#aab1f2] p-2">Project Management Office</p>
@@ -153,7 +166,8 @@
                         </div>
                         IT Project Management
                      </li>
-                     <li class="flex flex-col py-2 items-center gap-4 cursor-pointer s:w-[50%] l:w-[30%]"> <img class="w-[120px]" src="/img/icons/mobileprog.svg" alt="">
+                     <li class="flex flex-col py-2 items-center gap-4 cursor-pointer s:w-[50%] l:w-[30%]">
+                        <img class="w-[120px]" src="/img/icons/mobileprog.svg" alt="" />
                         <div class="flex items-center gap-2 text-[12px]">
                            <p class="rounded-2xl bg-[#aab1f2] p-2">React Native</p>
                            <p class="rounded-2xl bg-[#aab1f2] p-2">Kotlin Into</p>
@@ -165,8 +179,7 @@
                </div>
             </div>
          </section>
-         <section style="background-image: url('/img/violetbg.png');"
-          class=" bg-center bg-no-repeat bg-cover pb-32" >
+         <section style="background-image: url('/img/violetbg.png')" class="bg-center bg-no-repeat bg-cover pb-32">
             <div class="container relative px-3 mx-auto pt-[50px]">
                <div class="swiper mySwiper h-[600px] rounded-2xl">
                   <div class="swiper-wrapper h-full">
@@ -230,7 +243,6 @@
                <div class="static mt-5 md:mt-0 md:absolute -bottom-24 left-1/2 md:-translate-x-1/2 z-10 max-w-5xl w-full p-6 bg-[#5c5e76] text-white rounded-2xl border-2 border-[#9ea5f0] flex flex-col md:flex-row items-center justify-between gap-6">
                   <!-- Left side: Sign up buttons -->
                   <div class="w-full md:w-[40%] flex flex-col items-center md:items-start">
-
                      <!-- OR Divider -->
                      <div class="relative flex items-center w-full my-2">
                         <svg fill="currentColor" role="img" aria-hidden="true" class="gamut-1wy7cd4 e3tf18d0 h-1">
@@ -270,24 +282,24 @@
             </div>
 
             <div class="mx-3">
-				<div class="container mx-auto x-3 flex items-center justify-between gap-6 p-6 bg-[#5c5e76] rounded-lg border border-transparent shadow-sm">
-               <!-- Sol: Dotted Icon Alanı -->
-               <div class="w-3 h-full border-l-4 border-dotted border-white"></div>
+               <div class="container mx-auto x-3 flex items-center justify-between gap-6 p-6 bg-[#5c5e76] rounded-lg border border-transparent shadow-sm">
+                  <!-- Sol: Dotted Icon Alanı -->
+                  <div class="w-3 h-full border-l-4 border-dotted border-white"></div>
 
-               <!-- Orta: Metin Alanı -->
-               <div class="flex flex-col">
-                  <h3 class="text-[#7a074e] font-bold font-mono text-[20px]">» Transform your team with Codecademy Teams training</h3>
-                  <p class="text-white text-sm mt-1">Help everyone on your team build job-ready skills with a plan that offers flexible content assignment, progress tracking, and more.</p>
+                  <!-- Orta: Metin Alanı -->
+                  <div class="flex flex-col">
+                     <h3 class="text-[#7a074e] font-bold font-mono text-[20px]">» Transform your team with Codecademy Teams training</h3>
+                     <p class="text-white text-sm mt-1">Help everyone on your team build job-ready skills with a plan that offers flexible content assignment, progress tracking, and more.</p>
+                  </div>
+
+                  <!-- Sağ: Ok Simgesi -->
+                  <div class="text-[#7a074e] text-2xl">➜</div>
                </div>
-
-               <!-- Sağ: Ok Simgesi -->
-               <div class="text-[#7a074e] text-2xl">➜</div>
             </div>
-			</div>
          </section>
          <section id="akademiya" class="py-[30px] bg-[#eee]">
             <div class="container mx-auto px-4">
-               <h1 class="text-[35px] m:text-[40px] pb-[20px] ">Akademiya haqqında</h1>
+               <h1 class="text-[35px] m:text-[40px] pb-[20px]">Akademiya haqqında</h1>
                <div class="flex flex-col l:flex-row items-center gap-4">
                   <div class="w-[80%] l:w-[60%]">
                      <img class="2xl:max-w-[700px] rounded-3xl max-l:mx-auto" src="/img/akademiya.jpeg" alt="Akademiya" />
@@ -298,7 +310,7 @@
                   </div>
                </div>
                <div class="py-[20px]">
-                  <div class="flex flex-col-reverse l:flex-row items-center ">
+                  <div class="flex flex-col-reverse l:flex-row items-center">
                      <ol class="l:list-disc l:px-[60px] py-[10px] text-[18px] s:w-[80%] l:w-[50%]">
                         <h1 class="font-bold text-[25px] py-[20px] whitespace-nowrap">Akademiya kimlər üçündür?</h1>
                         <li>İstənilən ixtisasda oxuyan ancaq texnologiyaya və müasir peşələrə həvəsli tələbələr</li>
@@ -309,16 +321,112 @@
                         <li>Evdən (remote) və ya sərbəst (freelance) işlərdə işləməyi xoşlayanlar</li>
                      </ol>
                      <div class="w-[80%] l:w-[50%]">
-                        <img class="2xl:max-w-[700px] size-full m:h-[460px]! l:h-[339px]! bg-center bg-cover rounded-3xl " src="/img/notebook.jpeg" alt="" />
+                        <img class="2xl:max-w-[700px] size-full m:h-[460px]! l:h-[339px]! bg-center bg-cover rounded-3xl" src="/img/notebook.jpeg" alt="" />
                      </div>
                   </div>
-
                </div>
             </div>
          </section>
-         <section id="elaqe" class=" p-[20px]">
+         <section id="telebe-reyleri" class="bg-white py-20">
+            <div class="container mx-auto px-4">
+               <h2 class="text-[30px] m:text-[36px] font-bold text-center mb-4 text-gray-900">Vionix Academy Tələbələrinin Akademiya Haqqında Rəyləri</h2>
+               <p class="text-center max-w-2xl mx-auto text-lg text-gray-600 mb-12">Burada təhsil alan tələbələrimizin təcrübələri və hissləri.</p>
+
+               <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                  <!-- Card -->
+                  <div class="group bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-lg transition-all duration-500 hover:border-[#d00b84] hover:shadow-[0_0_35px_rgba(208,11,132,0.4)]">
+                     <div class="overflow-hidden">
+                        <img src="/img/vahidmllm.png" alt="student" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105" />
+                     </div>
+                     <div class="p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-1">Vahid Qasimov</h3>
+                        <p class="text-sm text-gray-600 mb-3">Frontend Development</p>
+                        <p class="text-gray-700">"Burada keçdiyim kurs məni sıfırdan professional səviyyəyə gətirdi. Mentorların dəstəyi möhtəşəmdir."</p>
+                     </div>
+                  </div>
+
+                  <!-- Card -->
+                  <div class="group bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-lg transition-all duration-500 hover:border-[#d00b84] hover:shadow-[0_0_35px_rgba(208,11,132,0.4)]">
+                     <div class="overflow-hidden">
+                        <img src="/img/elvin.jpg" alt="student" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105" />
+                     </div>
+                     <div class="p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-1">Elvin Isayev</h3>
+                        <p class="text-sm text-gray-600 mb-3">Cybersecurity</p>
+                        <p class="text-gray-700">"Real layihələr üzərində işləmək imkanım oldu və bu, iş dünyasına hazırlaşmaq üçün böyük üstünlük verdi."</p>
+                     </div>
+                  </div>
+
+                  <!-- Card -->
+                  <div class="group bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-lg transition-all duration-500 hover:border-[#d00b84] hover:shadow-[0_0_35px_rgba(208,11,132,0.4)]">
+                     <div class="overflow-hidden">
+                        <img src="/img/xezer.jpeg" alt="student" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105" />
+                     </div>
+                     <div class="p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-1">Xəzər Novruzov</h3>
+                        <p class="text-sm text-gray-600 mb-3">UI/UX Design</p>
+                        <p class="text-gray-700">"Akademiyada aldığım tədris məni yaradıcılıq və texniki biliklər baxımından gücləndirdi."</p>
+                     </div>
+                  </div>
+
+                  <!-- Card -->
+                  <div class="group bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-lg transition-all duration-500 hover:border-[#d00b84] hover:shadow-[0_0_35px_rgba(208,11,132,0.4)]">
+                     <div class="overflow-hidden">
+                        <img src="/img/murad.jpeg" alt="student" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105" />
+                     </div>
+                     <div class="p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-1">Murad Kərimov</h3>
+                        <p class="text-sm text-gray-600 mb-3">Backend Development</p>
+                        <p class="text-gray-700">"Vionix Academy məni yalnız kodlaşdırma öyrətmədi, həm də problem həll etmə bacarığımı inkişaf etdirdi."</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section id="korporativ" style="background-image: url('/img/violetbg.png')" class="bg-center bg-no-repeat bg-cover text-white py-16">
+            <div class="container mx-auto px-4">
+               <h1 class="text-[35px] m:text-[40px] font-bold text-center mb-8">Korporativ Təlim və Əməkdaşlıq</h1>
+               <p class="text-center max-w-3xl mx-auto text-lg mb-12">Vionix Academy olaraq şirkətlərin işçi heyətinin bacarıqlarını artırmaq üçün xüsusi hazırlanmış korporativ təlim proqramları təklif edirik. İT, proqramlaşdırma, kibertəhlükəsizlik, rəqəmsal marketinq və digər sahələrdə komandanızın inkişafına dəstək oluruq.</p>
+
+               <div class="grid md:grid-cols-3 gap-8">
+                  <!-- Card 1 -->
+                  <div class="group bg-[#ffffff14] rounded-2xl border border-[#ffffff2a] overflow-hidden transform transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:border-[#d00b84]">
+                     <div class="overflow-hidden">
+                        <img src="/img/team.jpg" alt="Komanda Təlimi" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110" />
+                     </div>
+                     <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Komanda Təlimləri</h3>
+                        <p class="text-white/90">Şirkətinizin ehtiyaclarına uyğun olaraq xüsusi təlim proqramları ilə işçi heyətinizin peşəkar inkişafını təmin edin.</p>
+                     </div>
+                  </div>
+
+                  <!-- Card 2 -->
+                  <div class="group bg-[#ffffff14] rounded-2xl border border-[#ffffff2a] overflow-hidden transform transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:border-[#d00b84]">
+                     <div class="overflow-hidden">
+                        <img src="/img/educate.jpg" alt="Xüsusi Proqram" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110" />
+                     </div>
+                     <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Xüsusi Tədris Proqramları</h3>
+                        <p class="text-white/90">İstənilən texnologiya sahəsində fərdiləşdirilmiş kurslar və real layihələr üzərində praktiki məşğələlər.</p>
+                     </div>
+                  </div>
+
+                  <!-- Card 3 -->
+                  <div class="group bg-[#ffffff14] rounded-2xl border border-[#ffffff2a] overflow-hidden transform transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:border-[#d00b84]">
+                     <div class="overflow-hidden">
+                        <img src="/img/support.jpg" alt="Dəstək" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110" />
+                     </div>
+                     <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Davamlı Dəstək</h3>
+                        <p class="text-white/90">Təlim sonrası mentor dəstəyi, karyera məsləhətləri və sertifikatlaşdırma imkanları ilə davamlı inkişaf.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section id="elaqe" class="p-[20px]">
             <div class="container mx-auto">
-               <h1 class="text-[35px] m:text-[40px] pb-[20px] ">Bizimlə Əlaqə Saxlayın</h1>
+               <h1 class="text-[35px] m:text-[40px] pb-[20px]">Bizimlə Əlaqə Saxlayın</h1>
                <div class="m:flex justify-between items-center">
                   <div class="flex flex-col gap-4 m:w-[45%]">
                      <div>
@@ -348,10 +456,7 @@
                         </select>
                      </div>
                      <div>
-                        <button
-                        style="background: #3C205E;
-                        background: linear-gradient(92deg, rgba(60, 32, 94, 1) 30%, rgba(208, 11, 132, 1) 100%);"
-                         class="text-white w-full font-bold px-4 m:px-6 py-3 rounded-xl cursor-pointer whitespace-nowrap">İndi Müraciət et</button>
+                        <button style="background: #3c205e; background: linear-gradient(92deg, rgba(60, 32, 94, 1) 30%, rgba(208, 11, 132, 1) 100%)" class="text-white w-full font-bold px-4 m:px-6 py-3 rounded-xl cursor-pointer whitespace-nowrap">İndi Müraciət et</button>
                      </div>
                   </div>
                   <div class="m:w-[45%]">
@@ -362,50 +467,84 @@
                         <p><i class="fa-solid fa-location-dot text-gray-600 text-[18px] mr-2"></i>Sumqayıt, Mərkəz plaza, 9-cu mərtəbə</p>
                      </div>
                      <div class="mt-4">
-                        <iframe class="w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3029.9352629216273!2d49.666362575763756!3d40.58718434524782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4030971d8184f87d%3A0xd95822e16020e50e!2sMerkez%20Plaza!5e0!3m2!1sru!2saz!4v1754815980671!5m2!1sru!2saz" max-width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe
+                           class="w-full"
+                           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3029.9352629216273!2d49.666362575763756!3d40.58718434524782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4030971d8184f87d%3A0xd95822e16020e50e!2sMerkez%20Plaza!5e0!3m2!1sru!2saz!4v1754815980671!5m2!1sru!2saz"
+                           max-width="600"
+                           height="450"
+                           style="border: 0"
+                           allowfullscreen=""
+                           loading="lazy"
+                           referrerpolicy="no-referrer-when-downgrade"></iframe>
                      </div>
                   </div>
                </div>
             </div>
          </section>
       </main>
-      <footer class="bg-[#3c205e] py-4 text-white">
-         <div class="bg-[#] px-6 border-t border-[#eee]  mx-auto m:max-w-[60%]">
-            <div class="font-[900] pt-[15px] pb-[10px] mx-auto">
-               <ul class="flex justify-between">
-                  <li class="cursor-pointer h-[50px]">
-                     Şirkət
-                     <ul class="text-[14px] pb-2 font-extralight text-[#fff] max-w-[300px]">
-                        <li><a href="#">Haqqımızda</a></li>
-                        <li><a href="#">Əlaqə</a></li>
-                        <li><a href="#">Vakansiyalar</a></li>
-                        <li><a href="#">Sayt Xəritəsi</a></li>
-                     </ul>
-                  </li>
-            
-                  <li class="cursor-pointer h-[50px]">
-                     Əlaqə
-                     <ul class=" text-[14px] pb-2 font-extralight text-[#fff] max-w-[200px]">
-                        <li>Sumqayıt, Mərkəz plaza, 9-cu mərtəbə</li>
-                        <li>+994-10-234-70-96</li>
-                     </ul>
-                  </li>
-               </ul>
+      <footer class="bg-[#3c205e] py-10 text-white">
+         <div class="px-6 border-t border-[#eee] mx-auto max-w-[90%] lg:max-w-[1200px]">
+            <div class="grid text-center sm:text-left grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 font-[900] pt-[15px] pb-[10px]">
+               <!-- Şirkət -->
+               <div>
+                  <h3 class="mb-3 text-lg">Şirkət</h3>
+                  <ul class="text-[14px] font-extralight space-y-2">
+                     <li><a href="#">Haqqımızda</a></li>
+                     <li><a href="#">Əlaqə</a></li>
+                     <li><a href="#">Vakansiyalar</a></li>
+                     <li><a href="#">Sayt Xəritəsi</a></li>
+                  </ul>
+               </div>
+
+               <!-- Tədris -->
+               <div>
+                  <h3 class="mb-3 text-lg">Tədris</h3>
+                  <ul class="text-[14px] font-extralight space-y-2">
+                     <li><a href="#">Frontend Development</a></li>
+                     <li><a href="#">Backend Development</a></li>
+                     <li><a href="#">UI/UX Dizayn</a></li>
+                     <li><a href="#">Cybersecurity</a></li>
+                     <li><a href="#">Data Science</a></li>
+                  </ul>
+               </div>
+
+               <!-- Əlaqə -->
+               <div>
+                  <h3 class="mb-3 text-lg">Əlaqə</h3>
+                  <ul class="text-[14px] font-extralight space-y-2">
+                     <li>Sumqayıt, Mərkəz plaza, 9-cu mərtəbə</li>
+                     <li>+994-10-234-70-96</li>
+                     <li><a href="mailto:info@vionixacademy.com">info@vionixacademy.com</a></li>
+                  </ul>
+               </div>
+
+               <!-- Faydalı Keçidlər -->
+               <div>
+                  <h3 class="mb-3 text-lg">Faydalı Keçidlər</h3>
+                  <ul class="text-[14px] font-extralight space-y-2">
+                     <li><a href="#">Tez-tez verilən suallar</a></li>
+                     <li><a href="#">Blog</a></li>
+                     <li><a href="#">Təlimçi Ol</a></li>
+                     <li><a href="#">Tələbə Rəyləri</a></li>
+                  </ul>
+               </div>
             </div>
+
+            <!-- Sosial Media və Copyright -->
             <div class="flex flex-col items-center mt-10">
-               <div class="text-[25px] text-center text-[#fff] mt-2">
-                  <i class="fa-brands fa-facebook"></i>
-                  <i class="fa-brands fa-instagram"></i>
-                  <i class="fa-brands fa-linkedin"></i>
-              </div>
-               <p class="text-[#fff] font-extralight text-[14px] py-[10px]">© 2025  Vionix Academy.</p>
+               <p class="text-sm mb-3 text-[#ddd]">Bizimlə əlaqədə qalın</p>
+               <div class="text-[25px] flex gap-4 text-[#fff]">
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+               </div>
+               <p class="text-[#fff] font-extralight text-[14px] py-[10px]">© 2025 Vionix Academy. Bütün hüquqlar qorunur.</p>
             </div>
-          </div>
+         </div>
       </footer>
 
       <script src="/js/header.js"></script>
       <script src="/js/swiperTyped.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-      
    </body>
 </html>
