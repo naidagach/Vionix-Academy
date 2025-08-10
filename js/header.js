@@ -17,10 +17,7 @@ function toggleMenu() {
   }
 }
 
-menuBtn.addEventListener("click", (e) => {
-  e.stopPropagation(); 
-  toggleMenu();
-});
+menuBtn.onclick = toggleMenu;
 
 document.querySelectorAll(".menu-link").forEach(link => {
   link.addEventListener("click", () => {
