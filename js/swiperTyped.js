@@ -1,4 +1,3 @@
-
 let typedInstance;
 
 const startTypedInActiveSlide = () => {

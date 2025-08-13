@@ -19,6 +19,25 @@
       <title>Vionix Academy</title>
    </head>
    <body>
+      <div id="banner" class="w-full py-5 bg-yellow-400 flex flex-col lg:flex-row justify-center items-center gap-5 relative">
+         <!-- Countdown -->
+         <div class="bg-white px-3 py-1 rounded">
+            <span id="countdown" class="font-bold text-black text-2xl">00d : 20h : 33m : 06s</span>
+         </div>
+
+         <!-- Text and Code -->
+         <p class="text-black text-center text-base px-10 md:px-0 md:text-xl font-extrabold">
+            ENDS AUG 15: 50% off annual Pro memberships with code
+            <span class="bg-white text-sm text-black px-1 py-0.5 rounded-xs">AUG25FLASH</span>
+         </p>
+
+         <!-- Join Pro Button -->
+         <button class="bg-black text-white font-extrabold px-4 py-2 hover:opacity-90 transition-all cursor-pointer duration-[.3s] rounded">Join pro</button>
+
+         <!-- Close Button -->
+         <button onclick="closeBanner()" class="absolute right-5 cursor-pointer ml-2 text-black font-bold text-3xl">×</button>
+      </div>
+
       <header style="background: url('/img/vionix.jpg')" class="h-full m:h-[100vh] bg-[#6e6e6] text-white relative">
          <nav class="container mx-auto flex justify-between items-center p-4 py-4">
             <div class="flex gap-6 items-center">
@@ -543,8 +562,9 @@
          </div>
       </footer>
 
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
       <script src="/js/header.js"></script>
       <script src="/js/swiperTyped.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script src="./js/banner.js"></script>
    </body>
 </html>
